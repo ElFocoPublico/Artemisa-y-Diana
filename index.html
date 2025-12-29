@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Artemisa & Diana</title>
+  <title>Artemisa & Diana | Catálogo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
@@ -15,13 +15,13 @@
 
     header {
       background-color: #f5d9c6;
-      padding: 20px;
+      padding: 25px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 32px;
+      font-size: 34px;
     }
 
     header p {
@@ -32,41 +32,57 @@
     .contenedor {
       max-width: 1000px;
       margin: auto;
-      padding: 20px;
+      padding: 25px;
     }
 
     .productos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
 
     .producto {
       background-color: #fff;
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 15px;
       text-align: center;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.12);
     }
 
     .producto img {
       width: 100%;
-      border-radius: 10px;
+      border-radius: 12px;
     }
 
     .producto h3 {
-      margin: 15px 0 10px;
+      margin: 15px 0 8px;
       font-size: 20px;
     }
 
     .producto p {
       font-size: 14px;
-      margin: 5px 0;
+      margin: 6px 0;
+    }
+
+    .btn-whatsapp {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 16px;
+      background-color: #25d366;
+      color: white;
+      text-decoration: none;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebe5d;
     }
 
     footer {
       text-align: center;
-      padding: 20px;
+      padding: 25px;
       background-color: #f5d9c6;
       margin-top: 40px;
       font-size: 14px;
@@ -78,7 +94,7 @@
 
   <header>
     <h1>Artemisa & Diana</h1>
-    <p>Velas artesanales hechas con amor</p>
+    <p>Catálogo de velas artesanales · Pedido por WhatsApp</p>
   </header>
 
   <div class="contenedor">
@@ -88,23 +104,33 @@
       <div class="producto">
         <img src="img/vela-masaje.png" alt="Vela de masaje">
         <h3>Vela de masaje</h3>
-        <p>Lavanda y menta</p>
+        <p>Aroma: lavanda y menta</p>
         <p>Relajante · Natural · Hecha a mano</p>
+        <a class="btn-whatsapp"
+           href="https://wa.me/34600000000?text=Hola,%20quiero%20informacion%20sobre%20la%20vela%20de%20masaje"
+           target="_blank">
+           Pedir por WhatsApp
+        </a>
       </div>
 
-      <!-- VELA NAVIDEÑA -->
+      <!-- VELA NAVIDAD -->
       <div class="producto">
         <img src="img/vela-navidad.png" alt="Vela navidena">
         <h3>Vela navideña</h3>
         <p>Aromas calidos de invierno</p>
-        <p>Edicion especial · Artesanal</p>
+        <p>Edicion especial</p>
+        <a class="btn-whatsapp"
+           href="https://wa.me/34675319381?text=Hola,%20quiero%20informacion%20sobre%20la%20vela%20navidena"
+           target="_blank">
+           Pedir por WhatsApp
+        </a>
       </div>
 
     </div>
   </div>
 
   <footer>
-    © 2025 Artemisa & Diana · Velas artesanales
+    © 2025 Artemisa & Diana · Catálogo artesanal
   </footer>
 
 </body>
