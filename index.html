@@ -29,19 +29,22 @@
       color: #2f3e2e;
     }
 
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
     .producto {
       background: white;
-      padding: 20px;
-      margin: 20px 0;
+      padding: 15px;
       border-radius: 10px;
       text-align: center;
     }
 
     .producto img {
       width: 100%;
-      max-width: 300px;
       border-radius: 10px;
-      margin-bottom: 10px;
     }
 
     footer {
@@ -49,12 +52,6 @@
       color: white;
       text-align: center;
       padding: 20px;
-    }
-
-    a {
-      color: #2f3e2e;
-      font-weight: bold;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -69,29 +66,29 @@
 <section>
   <h2>🌿 Sobre nosotros</h2>
   <p>
-    En <strong>Artemisa y Diana</strong> elaboramos velas y jabones a mano,
-    utilizando ingredientes naturales y aromas cuidadosamente seleccionados.
+    Elaboramos velas y jabones a mano, con ingredientes 100% naturales,
+    aromas cuidados y respeto por la naturaleza.
   </p>
+</section>
 
-  <h2>🕯️ Nuestras velas artesanales</h2>
+<section>
+  <h2>🕯️ Nuestras velas</h2>
 
-  <div class="producto">
-    <img src="imagen/vela-masaje.jpeg" alt="Vela de masaje">
-    <h3>Vela de masaje</h3>
-    <p>Ideal para relajación · Hecha a mano · 100% natural</p>
+  <div class="productos">
+
+    <div class="producto">
+      <img src="imagen/vela-masaje.jpeg" alt="Vela de masaje">
+      <h3>Vela de masaje</h3>
+      <p>Relajante · Natural · Hecha a mano</p>
+    </div>
+
+    <div class="producto">
+      <img src="imagen/aromas-navideños.jpeg" alt="Aromas navideños">
+      <h3>Aromas navideños</h3>
+      <p>Canela · Naranja · Especias</p>
+    </div>
+
   </div>
-
-  <div class="producto">
-    <img src="imagen/aromas-navideños.jpeg" alt="Aromas navideños">
-    <h3>Aromas navideños</h3>
-    <p>Edición especial · Canela, naranja y especias</p>
-  </div>
-
-  <h2>📩 Contacto</h2>
-  <p>
-    Escríbenos por WhatsApp o Instagram para pedidos personalizados.<br>
-    <a href="#">Instagram</a> | <a href="#">WhatsApp</a>
-  </p>
 </section>
 
 <footer>
